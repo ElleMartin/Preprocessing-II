@@ -1,19 +1,26 @@
 // Navigation Styles here
+#header {
 nav {
     margin-right: 12%;
     color: black;
     text-decoration: none;
     width: 40%;
-
+  
     a {
     padding: 0 7%;
     .link(1.5em, black, none);
+
+    @media @mobile {
+        padding: 0 20%;
+    }
 }
 
-.flex(space-between, row, baseline, wrap);
+@media @mobile {
+    .flex(space-between, row, center, nowrap);
+    width: 35%;
+    text-align: center;
+    white-space: nowrap;
+    margin: 3% 0 0 2%;
+  }
 }
-
-
-
-
-
+}
