@@ -1,61 +1,97 @@
+/* HEADER */
+#header {
+  width: 90vw;
+  
+  margin: 3% 3% 0 3%;
+  
+  padding-bottom: 2%;
+  
+  h1 {
+      margin-left: 17%;
+  }
+
+  .flex(space-between, row, baseline, wrap);
+}
+  
+/* HERO SECTION */
+#hero {
+  margin: 0 18% 2% 18%;
+
+  .flex(center, row, center, wrap);
+}
+
+/* WELCOME SECTION */
+.welcome {
+margin: 2% 18% 0 18%;
+
+p {
+    border-bottom: 2px silver dashed;
+    padding-bottom: 2%;
+}
+}
+
 .home {
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
-    }
+  
+  
+  .text-content {
+    width: 48%;
+    padding-right: 1%;
   }
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+  .img-content {
+    width: 48%;
+    padding-left: 1%;
 
     img {
       border-radius: 10px;
     }
   }
+}
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0;
   }
-}// home
+
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+}
+
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+
+a {
+  .custom-btn(white,teal, 10px);
+}
+  }
+}
+}

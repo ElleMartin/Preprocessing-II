@@ -1,1 +1,24 @@
 // Mixins in here
+
+.flex(@justify,@direction,@align,@wrap) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+    align-content: @align;
+    flex-wrap: @wrap;
+}
+
+.link(@size,@color,@decor) {
+    font-size: @size;
+    color: @color;
+    text-decoration: @decor;
+}
+
+.custom-btn(@color,@bkcolor,@bradius){
+    color: @color;
+    background-color: @bkcolor;
+    border-radius: @bradius;
+    padding: 3% 25%;
+    text-decoration: none;
+    font-size: 1.5em;
+}
