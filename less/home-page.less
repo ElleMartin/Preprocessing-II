@@ -13,13 +13,20 @@
         .flex(center, column, center, nowrap);
         width: 70%;
       }
+
+      .keyframes(fade-in;{
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        });
+    
+      .animation(fade-in 1s linear infinite alternate)
   }
 
   .flex(space-between, row, baseline, wrap);
 
   @media @mobile {
     .flex(center, column, center, nowrap);
-    text-align: center; /* FIX CENTERING */
+    text-align: center;
   }
 }
   
@@ -27,14 +34,15 @@
 #hero {
   margin: 0 18% 2% 18%;
 
-  .flex(center, row, center, wrap);
-
+.flex(center, row, center, wrap);
+  
   @media @mobile {
     width: 90%;
     margin: 0 20% 2% 5%;
 
     .flex(center, column, center, nowrap);
   }
+
 }
 
 /* WELCOME SECTION */

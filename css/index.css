@@ -1,3 +1,4 @@
+/* STRETCH GOAL - ANIMATION MIXIN - COMPLETELY NEED TO UNDERSTAND THIS BETTER!! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -222,6 +223,9 @@ img {
 }
 #header h1 {
   margin-left: 17%;
+  -webkit-animation: fade-in 1s linear infinite alternate;
+  -moz-animation: fade-in 1s linear infinite alternate;
+  animation: fade-in 1s linear infinite alternate;
 }
 @media only screen and (max-width: 500px) {
   #header h1 {
@@ -233,6 +237,30 @@ img {
     width: 70%;
   }
 }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 500px) {
   #header {
     display: flex;
@@ -241,7 +269,6 @@ img {
     align-content: center;
     flex-wrap: nowrap;
     text-align: center;
-    /* FIX CENTERING */
   }
 }
 /* HERO SECTION */

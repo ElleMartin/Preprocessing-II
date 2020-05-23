@@ -22,3 +22,16 @@
     text-decoration: none;
     font-size: 1.5em;
 }
+
+/* STRETCH GOAL - ANIMATION MIXIN - COMPLETELY NEED TO UNDERSTAND THIS BETTER!! */ 
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
